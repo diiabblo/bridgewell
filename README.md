@@ -232,3 +232,15 @@ MIT
 - [Stacks Documentation](https://docs.stacks.co)
 - [Clarity Language](https://book.clarity-lang.org)
 - [RainbowKit](https://rainbowkit.com)
+
+---
+
+## Project Status
+
+🚀 **Active Development** - This project is under active development and welcomes contributions.
+
+## Getting Involved
+
+- Check out our [Contributing Guidelines](./CONTRIBUTING.md)
+- Join the discussion in [GitHub Issues](../../issues)
+- Follow development updates
