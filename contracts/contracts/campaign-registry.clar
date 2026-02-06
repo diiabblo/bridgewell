@@ -19,6 +19,13 @@
 (define-constant ERR_CAMPAIGN_NOT_EXPIRED (err u105))
 (define-constant ERR_INVALID_AMOUNT (err u106))
 (define-constant ERR_UNAUTHORIZED (err u107))
+(define-constant ERR_TOKEN_TRANSFER_FAILED (err u108))
+(define-constant ERR_NO_DONATION (err u109))
+(define-constant ERR_CLAIM_TOO_EARLY (err u110))
+(define-constant ERR_INVALID_CATEGORY (err u111))
+(define-constant ERR_MILESTONE_NOT_MET (err u112))
+(define-constant ERR_CONTRACT_PAUSED (err u113))
+(define-constant ERR_ESCROW_INSUFFICIENT (err u114))
 
 ;; Platform fee: 5% (500 basis points)
 (define-constant PLATFORM_FEE_BPS u500)
