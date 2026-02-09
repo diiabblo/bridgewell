@@ -1,0 +1,25 @@
+[project]
+name = "bridgewell"
+description = "BridgeWell cross-chain bridge"
+authors = ["BridgeWell Team"]
+
+[contracts.bridge-core]
+path = "contracts/bridge/bridge-core.clar"
+
+[contracts.bridge-token]
+path = "contracts/bridge/bridge-token.clar"
+
+[contracts.bridge-vault]
+path = "contracts/bridge/bridge-vault.clar"
+
+[contracts.bridge-registry]
+path = "contracts/bridge/bridge-registry.clar"
+
+[contracts.bridge-oracle]
+path = "contracts/bridge/bridge-oracle.clar"
+
+[contracts.bridge-fee-manager]
+path = "contracts/bridge/bridge-fee-manager.clar"
+
+[contracts.bridge-governance]
+path = "contracts/bridge/bridge-governance.clar"
