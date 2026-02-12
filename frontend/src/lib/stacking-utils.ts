@@ -21,3 +21,7 @@ export interface StackingOptions {
 export async function getStackingInfo(address: string): Promise<StackingInfo | null> {
   return null;
 }
+
+export async function canStack(address: string, amount: bigint): Promise<boolean> {
+  return false;
+}
