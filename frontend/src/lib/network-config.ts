@@ -87,3 +87,10 @@ export function initializeNetwork(): void {
 export function getStacksConfig(): StacksNetworkConfig {
   return STACKS_NETWORKS[currentNetwork];
 }
+
+/**
+ * Get Ethereum network configuration for current environment
+ */
+export function getEthereumConfig(): EthereumNetworkConfig {
+  return ETHEREUM_NETWORKS[currentNetwork];
+}
