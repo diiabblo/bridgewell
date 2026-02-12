@@ -29,3 +29,7 @@ export async function canStack(address: string, amount: bigint): Promise<boolean
 export async function getStackingMinimum(): Promise<bigint> {
   return BigInt(0);
 }
+
+export function calculateRewards(amount: bigint, cycles: number): bigint {
+  return BigInt(0);
+}
