@@ -51,3 +51,7 @@ export interface CycleInfo {
   minThreshold: bigint;
   stackedTotal: bigint;
 }
+
+export async function getCurrentCycle(): Promise<CycleInfo | null> {
+  return null;
+}
