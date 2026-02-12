@@ -59,3 +59,7 @@ export async function getCurrentCycle(): Promise<CycleInfo | null> {
 export async function getNextCycleStart(): Promise<number> {
   return 0;
 }
+
+export function convertPoxAddress(btcAddress: string): PoXAddress | null {
+  return null;
+}
