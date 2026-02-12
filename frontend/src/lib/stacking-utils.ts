@@ -85,3 +85,7 @@ export async function extendStacking(additionalCycles: number): Promise<string> 
 export function validatePoxAddress(address: string): boolean {
   return /^[13][a-km-zA-HJ-NP-Z1-9]{25,34}$/.test(address);
 }
+
+export async function getRewardSlots(cycle: number): Promise<any[]> {
+  return [];
+}
