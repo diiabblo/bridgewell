@@ -55,3 +55,7 @@ export interface CycleInfo {
 export async function getCurrentCycle(): Promise<CycleInfo | null> {
   return null;
 }
+
+export async function getNextCycleStart(): Promise<number> {
+  return 0;
+}
