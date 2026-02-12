@@ -17,3 +17,7 @@ export interface StackingOptions {
   burnBlockHeight: number;
   cycles: number;
 }
+
+export async function getStackingInfo(address: string): Promise<StackingInfo | null> {
+  return null;
+}
