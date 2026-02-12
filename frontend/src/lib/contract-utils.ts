@@ -87,3 +87,8 @@ export function createPostCondition(options: PostCondition): any {
   // Implementation placeholder
   return {};
 }
+
+export async function estimateContractCallCost(options: ContractCallOptions): Promise<number> {
+  // Implementation placeholder
+  return 0;
+}
