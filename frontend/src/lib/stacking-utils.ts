@@ -33,3 +33,7 @@ export async function getStackingMinimum(): Promise<bigint> {
 export function calculateRewards(amount: bigint, cycles: number): bigint {
   return BigInt(0);
 }
+
+export async function stackSTX(options: StackingOptions): Promise<string> {
+  return '';
+}
