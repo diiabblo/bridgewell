@@ -92,3 +92,9 @@ export async function estimateContractCallCost(options: ContractCallOptions): Pr
   // Implementation placeholder
   return 0;
 }
+
+export interface TransactionStatus {
+  status: 'pending' | 'success' | 'failed';
+  txId: string;
+  blockHeight?: number;
+}
