@@ -10,3 +10,5 @@ export interface WalletConnection {
 export const WALLET_FEATURE_2 = 'feature_2';
 
 export const WALLET_FEATURE_3 = 'feature_3';
+
+export const WALLET_FEATURE_4 = 'feature_4';
