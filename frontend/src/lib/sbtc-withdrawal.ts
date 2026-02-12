@@ -8,3 +8,5 @@ export interface WithdrawalRequest {
 }
 
 export const WITHDRAWAL_STEP_2 = 'step_2';
+
+export const WITHDRAWAL_STEP_3 = 'step_3';
