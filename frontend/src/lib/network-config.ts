@@ -144,3 +144,16 @@ export function getTransactionUrl(txId: string, chain: 'stacks' | 'ethereum'): s
     return `${config.explorerUrl}/tx/${txId}`;
   }
 }
+
+/**
+ * Get network explorer URL for an address
+ */
+export function getAddressUrl(address: string, chain: 'stacks' | 'ethereum'): string {
+  if (chain === 'stacks') {
+    const config = getStacksConfig();
+    return `${config.explorerUrl}/address/${address}`;
+  } else {
+    const config = getEthereumConfig();
+    return `${config.explorerUrl}/address/${address}`;
+  }
+}
