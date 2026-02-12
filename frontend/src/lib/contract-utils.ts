@@ -15,3 +15,9 @@ export interface FunctionArg {
   type: string;
   value: any;
 }
+
+export interface PostCondition {
+  type: 'stx' | 'ft' | 'nft';
+  address: string;
+  amount?: bigint;
+}
