@@ -14,3 +14,5 @@ export const WITHDRAWAL_STEP_3 = 'step_3';
 export const WITHDRAWAL_STEP_4 = 'step_4';
 
 export const WITHDRAWAL_STEP_5 = 'step_5';
+
+export const WITHDRAWAL_STEP_6 = 'step_6';
