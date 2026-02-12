@@ -8,3 +8,10 @@ export interface StacksNetworkConfig {
   apiUrl: string;
   explorerUrl: string;
 }
+
+export interface EthereumNetworkConfig {
+  name: string;
+  chainId: number;
+  explorerUrl: string;
+  rpcUrl?: string;
+}
