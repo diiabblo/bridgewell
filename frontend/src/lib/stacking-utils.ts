@@ -41,3 +41,7 @@ export async function stackSTX(options: StackingOptions): Promise<string> {
 export async function delegateSTX(delegateTo: string, amount: bigint): Promise<string> {
   return '';
 }
+
+export async function revokeDelegation(): Promise<string> {
+  return '';
+}
