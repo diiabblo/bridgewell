@@ -81,3 +81,7 @@ export async function increaseStackAmount(additionalSTX: bigint): Promise<string
 export async function extendStacking(additionalCycles: number): Promise<string> {
   return '';
 }
+
+export function validatePoxAddress(address: string): boolean {
+  return /^[13][a-km-zA-HJ-NP-Z1-9]{25,34}$/.test(address);
+}
