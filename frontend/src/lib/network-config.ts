@@ -1,4 +1,28 @@
-// Network Configuration Module - Step 1: Basic types
+// Network Configuration Module
+// 
+// This module provides centralized network configuration management for the Bridgewell application.
+// It supports both Stacks and Ethereum networks across mainnet and testnet environments.
+//
+// Features:
+// - Type-safe network configuration
+// - Persistent network selection via localStorage
+// - Network change event listeners
+// - Helper functions for explorer URLs
+// - Automatic network detection from chain IDs
+//
+// Usage:
+//   import { getCurrentNetwork, setCurrentNetwork, getStacksConfig } from './network-config';
+//   
+//   // Get current network
+//   const network = getCurrentNetwork(); // 'mainnet' | 'testnet'
+//   
+//   // Get Stacks configuration
+//   const stacksConfig = getStacksConfig();
+//   
+//   // Listen for network changes
+//   const unsubscribe = onNetworkChange((newNetwork) => {
+//     console.log('Network changed to:', newNetwork);
+//   });
 
 export type NetworkEnvironment = 'mainnet' | 'testnet';
 
