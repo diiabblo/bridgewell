@@ -56,3 +56,8 @@ export interface ContractDeployOptions {
   codeBody: string;
   network: NetworkType;
 }
+
+export async function deployContract(options: ContractDeployOptions): Promise<string> {
+  // Implementation placeholder
+  return '';
+}
