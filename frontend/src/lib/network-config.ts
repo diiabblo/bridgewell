@@ -109,3 +109,11 @@ export function detectNetworkFromChainId(chainId: number): NetworkEnvironment | 
  */
 type NetworkChangeListener = (network: NetworkEnvironment) => void;
 const networkListeners: Set<NetworkChangeListener> = new Set();
+
+/**
+ * Subscribe to network changes
+ */
+export function onNetworkChange(listener: NetworkChangeListener): () => void {
+  networkListeners.add(listener);
+  return () => networkListeners.delete(listener);
+}
