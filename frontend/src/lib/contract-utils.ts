@@ -10,3 +10,8 @@ export interface ContractCallOptions {
 }
 
 export type NetworkType = 'mainnet' | 'testnet';
+
+export interface FunctionArg {
+  type: string;
+  value: any;
+}
