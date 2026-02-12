@@ -37,3 +37,5 @@ export const DEPOSIT_STEP_15 = 'step_15';
 export const DEPOSIT_STEP_16 = 'step_16';
 
 export const DEPOSIT_STEP_17 = 'step_17';
+
+export const DEPOSIT_STEP_18 = 'step_18';
