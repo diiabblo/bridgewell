@@ -21,3 +21,8 @@ export interface PostCondition {
   address: string;
   amount?: bigint;
 }
+
+export async function callReadOnlyFunction(options: ContractCallOptions): Promise<any> {
+  // Implementation placeholder
+  return null;
+}
