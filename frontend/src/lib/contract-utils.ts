@@ -31,3 +31,8 @@ export async function callPublicFunction(options: ContractCallOptions): Promise<
   // Implementation placeholder
   return '';
 }
+
+export function buildContractCall(options: ContractCallOptions) {
+  // Implementation placeholder
+  return {};
+}
