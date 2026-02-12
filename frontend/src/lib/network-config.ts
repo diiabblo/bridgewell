@@ -124,3 +124,10 @@ export function onNetworkChange(listener: NetworkChangeListener): () => void {
   networkListeners.add(listener);
   return () => networkListeners.delete(listener);
 }
+
+/**
+ * Validate if a network environment is supported
+ */
+export function isValidNetwork(network: string): network is NetworkEnvironment {
+  return network === 'mainnet' || network === 'testnet';
+}
