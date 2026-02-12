@@ -6,3 +6,5 @@ export interface WithdrawalRequest {
   btcAddress: string;
   fee: bigint;
 }
+
+export const WITHDRAWAL_STEP_2 = 'step_2';
