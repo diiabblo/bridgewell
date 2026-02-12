@@ -24,3 +24,5 @@ export const WALLET_FEATURE_8 = 'feature_8';
 export const WALLET_FEATURE_9 = 'feature_9';
 
 export const WALLET_FEATURE_10 = 'feature_10';
+
+export const WALLET_FEATURE_11 = 'feature_11';
