@@ -66,3 +66,8 @@ export function encodeCV(value: any, type: string): any {
   // Implementation placeholder
   return value;
 }
+
+export function decodeCV(cv: any): any {
+  // Implementation placeholder
+  return cv;
+}
