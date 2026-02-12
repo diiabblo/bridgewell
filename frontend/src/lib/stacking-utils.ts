@@ -73,3 +73,7 @@ export interface StackerInfo {
 export async function getStackerInfo(address: string): Promise<StackerInfo | null> {
   return null;
 }
+
+export async function increaseStackAmount(additionalSTX: bigint): Promise<string> {
+  return '';
+}
