@@ -131,3 +131,16 @@ export function onNetworkChange(listener: NetworkChangeListener): () => void {
 export function isValidNetwork(network: string): network is NetworkEnvironment {
   return network === 'mainnet' || network === 'testnet';
 }
+
+/**
+ * Get network explorer URL for a transaction
+ */
+export function getTransactionUrl(txId: string, chain: 'stacks' | 'ethereum'): string {
+  if (chain === 'stacks') {
+    const config = getStacksConfig();
+    return `${config.explorerUrl}/txid/${txId}`;
+  } else {
+    const config = getEthereumConfig();
+    return `${config.explorerUrl}/tx/${txId}`;
+  }
+}
