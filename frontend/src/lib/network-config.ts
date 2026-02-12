@@ -80,3 +80,10 @@ export function initializeNetwork(): void {
     }
   }
 }
+
+/**
+ * Get Stacks network configuration for current environment
+ */
+export function getStacksConfig(): StacksNetworkConfig {
+  return STACKS_NETWORKS[currentNetwork];
+}
