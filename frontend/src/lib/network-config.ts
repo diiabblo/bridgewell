@@ -50,3 +50,10 @@ export const ETHEREUM_NETWORKS: Record<NetworkEnvironment, EthereumNetworkConfig
 
 // Current network state management
 let currentNetwork: NetworkEnvironment = 'testnet';
+
+/**
+ * Get the current active network environment
+ */
+export function getCurrentNetwork(): NetworkEnvironment {
+  return currentNetwork;
+}
