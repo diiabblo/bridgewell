@@ -82,3 +82,8 @@ export async function getContractMetadata(contractId: string): Promise<ContractM
   // Implementation placeholder
   return null;
 }
+
+export function createPostCondition(options: PostCondition): any {
+  // Implementation placeholder
+  return {};
+}
