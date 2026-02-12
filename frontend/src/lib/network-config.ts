@@ -31,3 +31,19 @@ export const STACKS_NETWORKS: Record<NetworkEnvironment, StacksNetworkConfig> = 
     explorerUrl: 'https://explorer.hiro.so/?chain=testnet',
   },
 };
+
+// Ethereum network configurations
+export const ETHEREUM_NETWORKS: Record<NetworkEnvironment, EthereumNetworkConfig> = {
+  mainnet: {
+    name: 'Ethereum Mainnet',
+    chainId: 1,
+    explorerUrl: 'https://etherscan.io',
+    rpcUrl: 'https://eth.llamarpc.com',
+  },
+  testnet: {
+    name: 'Sepolia Testnet',
+    chainId: 11155111,
+    explorerUrl: 'https://sepolia.etherscan.io',
+    rpcUrl: 'https://rpc.sepolia.org',
+  },
+};
