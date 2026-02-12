@@ -25,3 +25,7 @@ export async function getStackingInfo(address: string): Promise<StackingInfo | n
 export async function canStack(address: string, amount: bigint): Promise<boolean> {
   return false;
 }
+
+export async function getStackingMinimum(): Promise<bigint> {
+  return BigInt(0);
+}
