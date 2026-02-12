@@ -57,3 +57,14 @@ let currentNetwork: NetworkEnvironment = 'testnet';
 export function getCurrentNetwork(): NetworkEnvironment {
   return currentNetwork;
 }
+
+/**
+ * Set the current active network environment
+ */
+export function setCurrentNetwork(network: NetworkEnvironment): void {
+  currentNetwork = network;
+  // Persist to localStorage for next session
+  if (typeof window !== 'undefined') {
+    localStorage.setItem('bridgewell_network', network);
+  }
+}
