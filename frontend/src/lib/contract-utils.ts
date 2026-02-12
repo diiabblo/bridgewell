@@ -26,3 +26,8 @@ export async function callReadOnlyFunction(options: ContractCallOptions): Promis
   // Implementation placeholder
   return null;
 }
+
+export async function callPublicFunction(options: ContractCallOptions): Promise<string> {
+  // Implementation placeholder
+  return '';
+}
