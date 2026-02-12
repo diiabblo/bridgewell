@@ -68,3 +68,15 @@ export function setCurrentNetwork(network: NetworkEnvironment): void {
     localStorage.setItem('bridgewell_network', network);
   }
 }
+
+/**
+ * Initialize network from localStorage or default to testnet
+ */
+export function initializeNetwork(): void {
+  if (typeof window !== 'undefined') {
+    const saved = localStorage.getItem('bridgewell_network');
+    if (saved === 'mainnet' || saved === 'testnet') {
+      currentNetwork = saved;
+    }
+  }
+}
