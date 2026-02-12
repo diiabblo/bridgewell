@@ -63,3 +63,9 @@ export async function getNextCycleStart(): Promise<number> {
 export function convertPoxAddress(btcAddress: string): PoXAddress | null {
   return null;
 }
+
+export interface StackerInfo {
+  locked: bigint;
+  unlockHeight: number;
+  poxAddress: PoXAddress;
+}
