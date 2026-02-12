@@ -45,3 +45,9 @@ export async function delegateSTX(delegateTo: string, amount: bigint): Promise<s
 export async function revokeDelegation(): Promise<string> {
   return '';
 }
+
+export interface CycleInfo {
+  id: number;
+  minThreshold: bigint;
+  stackedTotal: bigint;
+}
