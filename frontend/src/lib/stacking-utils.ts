@@ -10,3 +10,10 @@ export interface PoXAddress {
   version: Buffer;
   hashbytes: Buffer;
 }
+
+export interface StackingOptions {
+  amountMicroStx: bigint;
+  poxAddress: string;
+  burnBlockHeight: number;
+  cycles: number;
+}
