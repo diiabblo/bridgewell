@@ -94,3 +94,12 @@ export function getStacksConfig(): StacksNetworkConfig {
 export function getEthereumConfig(): EthereumNetworkConfig {
   return ETHEREUM_NETWORKS[currentNetwork];
 }
+
+/**
+ * Detect network based on Ethereum chain ID
+ */
+export function detectNetworkFromChainId(chainId: number): NetworkEnvironment | null {
+  if (chainId === 1) return 'mainnet';
+  if (chainId === 11155111) return 'testnet';
+  return null;
+}
