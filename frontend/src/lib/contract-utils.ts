@@ -40,3 +40,9 @@ export function buildContractCall(options: ContractCallOptions) {
 export function validateContractAddress(address: string): boolean {
   return /^S[TP][A-Z0-9]+$/.test(address);
 }
+
+export function parseContractId(contractId: string): { address: string; name: string } | null {
+  const parts = contractId.split('.');
+  if (parts.length !== 2) return null;
+  return { address: parts[0], name: parts[1] };
+}
