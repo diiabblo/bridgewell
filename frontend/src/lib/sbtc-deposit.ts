@@ -5,3 +5,5 @@ export interface DepositRequest {
   amount: bigint;
   stacksAddress: string;
 }
+
+export const DEPOSIT_STEP_2 = 'step_2';
