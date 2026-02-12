@@ -77,3 +77,7 @@ export async function getStackerInfo(address: string): Promise<StackerInfo | nul
 export async function increaseStackAmount(additionalSTX: bigint): Promise<string> {
   return '';
 }
+
+export async function extendStacking(additionalCycles: number): Promise<string> {
+  return '';
+}
