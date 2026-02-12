@@ -77,3 +77,8 @@ export interface ContractMetadata {
   publishedAt: number;
   contractName: string;
 }
+
+export async function getContractMetadata(contractId: string): Promise<ContractMetadata | null> {
+  // Implementation placeholder
+  return null;
+}
