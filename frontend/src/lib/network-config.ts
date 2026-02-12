@@ -103,3 +103,9 @@ export function detectNetworkFromChainId(chainId: number): NetworkEnvironment | 
   if (chainId === 11155111) return 'testnet';
   return null;
 }
+
+/**
+ * Network change event listeners
+ */
+type NetworkChangeListener = (network: NetworkEnvironment) => void;
+const networkListeners: Set<NetworkChangeListener> = new Set();
