@@ -5,3 +5,8 @@ export interface StackingInfo {
   stacked: bigint;
   burnchainUnlockHeight: number;
 }
+
+export interface PoXAddress {
+  version: Buffer;
+  hashbytes: Buffer;
+}
