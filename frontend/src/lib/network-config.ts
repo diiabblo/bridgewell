@@ -62,10 +62,17 @@ export function getCurrentNetwork(): NetworkEnvironment {
  * Set the current active network environment
  */
 export function setCurrentNetwork(network: NetworkEnvironment): void {
+  const previousNetwork = currentNetwork;
   currentNetwork = network;
+  
   // Persist to localStorage for next session
   if (typeof window !== 'undefined') {
     localStorage.setItem('bridgewell_network', network);
+  }
+  
+  // Notify listeners of network change
+  if (previousNetwork !== network) {
+    networkListeners.forEach(listener => listener(network));
   }
 }
 
