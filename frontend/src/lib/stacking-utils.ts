@@ -69,3 +69,7 @@ export interface StackerInfo {
   unlockHeight: number;
   poxAddress: PoXAddress;
 }
+
+export async function getStackerInfo(address: string): Promise<StackerInfo | null> {
+  return null;
+}
