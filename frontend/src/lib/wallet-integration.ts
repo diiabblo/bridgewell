@@ -6,3 +6,5 @@ export interface WalletConnection {
   publicKey: string;
   network: string;
 }
+
+export const WALLET_FEATURE_2 = 'feature_2';
