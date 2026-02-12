@@ -47,3 +47,6 @@ export const ETHEREUM_NETWORKS: Record<NetworkEnvironment, EthereumNetworkConfig
     rpcUrl: 'https://rpc.sepolia.org',
   },
 };
+
+// Current network state management
+let currentNetwork: NetworkEnvironment = 'testnet';
