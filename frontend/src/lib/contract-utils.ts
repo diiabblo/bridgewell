@@ -71,3 +71,9 @@ export function decodeCV(cv: any): any {
   // Implementation placeholder
   return cv;
 }
+
+export interface ContractMetadata {
+  source: string;
+  publishedAt: number;
+  contractName: string;
+}
