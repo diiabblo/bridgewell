@@ -1,8 +1,8 @@
-# Impact-X: Cross-Chain Crowdfunding for Bitcoin Builders
+# Bridgewell: Cross-Chain Crowdfunding for Bitcoin Builders
 
 > Unlock Ethereum liquidity to fund the next generation of Bitcoin & Stacks builders.
 
-Impact-X is a decentralized crowdfunding platform that bridges the gap between Ethereum capital and Stacks innovation. Creators launch campaigns on Stacks and accept USDC donations from Ethereum wallets via Circle's xReserve protocol.
+Bridgewell is a decentralized crowdfunding platform that bridges the gap between Ethereum capital and Stacks innovation. Creators launch campaigns on Stacks and accept USDC donations from Ethereum wallets via Circle's xReserve protocol.
 
 ## Features
 
@@ -75,7 +75,7 @@ For testing on Sepolia + Stacks Testnet:
 ## Project Structure
 
 ```
-impact-x/
+bridgewell/
 ├── contracts/                    # Clarity smart contracts
 │   ├── Clarinet.toml            # Clarinet configuration
 │   └── contracts/
