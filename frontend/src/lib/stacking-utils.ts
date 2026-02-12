@@ -37,3 +37,7 @@ export function calculateRewards(amount: bigint, cycles: number): bigint {
 export async function stackSTX(options: StackingOptions): Promise<string> {
   return '';
 }
+
+export async function delegateSTX(delegateTo: string, amount: bigint): Promise<string> {
+  return '';
+}
