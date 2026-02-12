@@ -61,3 +61,8 @@ export async function deployContract(options: ContractDeployOptions): Promise<st
   // Implementation placeholder
   return '';
 }
+
+export function encodeCV(value: any, type: string): any {
+  // Implementation placeholder
+  return value;
+}
