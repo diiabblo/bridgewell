@@ -15,3 +15,19 @@ export interface EthereumNetworkConfig {
   explorerUrl: string;
   rpcUrl?: string;
 }
+
+// Stacks network configurations
+export const STACKS_NETWORKS: Record<NetworkEnvironment, StacksNetworkConfig> = {
+  mainnet: {
+    name: 'Stacks Mainnet',
+    chainId: 1,
+    apiUrl: 'https://api.hiro.so',
+    explorerUrl: 'https://explorer.hiro.so',
+  },
+  testnet: {
+    name: 'Stacks Testnet',
+    chainId: 2147483648,
+    apiUrl: 'https://api.testnet.hiro.so',
+    explorerUrl: 'https://explorer.hiro.so/?chain=testnet',
+  },
+};
