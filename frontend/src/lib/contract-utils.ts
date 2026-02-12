@@ -98,3 +98,8 @@ export interface TransactionStatus {
   txId: string;
   blockHeight?: number;
 }
+
+export async function getTransactionStatus(txId: string): Promise<TransactionStatus> {
+  // Implementation placeholder
+  return { status: 'pending', txId };
+}
