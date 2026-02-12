@@ -36,3 +36,7 @@ export function buildContractCall(options: ContractCallOptions) {
   // Implementation placeholder
   return {};
 }
+
+export function validateContractAddress(address: string): boolean {
+  return /^S[TP][A-Z0-9]+$/.test(address);
+}
