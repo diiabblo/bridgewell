@@ -8,3 +8,5 @@ export interface ContractCallOptions {
   functionArgs: any[];
   network: 'mainnet' | 'testnet';
 }
+
+export type NetworkType = 'mainnet' | 'testnet';
