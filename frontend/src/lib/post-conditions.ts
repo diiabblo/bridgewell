@@ -71,3 +71,8 @@ export class PostConditionBuilder {
     this.conditions.push({ type: 'nft', assetId, tokenId, comparator: 'eq', mode: 'allow', sender });
     return this;
   }
+
+  build(): AnyPostCondition[] {
+    return this.conditions;
+  }
+}
