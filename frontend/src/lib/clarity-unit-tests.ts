@@ -56,3 +56,9 @@ export function assertGreaterThan(a: number, b: number): AssertionResult {
 export function assertLessThan(a: number, b: number): AssertionResult {
   return { success: a < b, expected: \`< \${b}\`, actual: a };
 }
+
+export interface TestSuite {
+  name: string;
+  tests: ContractTest[];
+  run(): Promise<ContractTest[]>;
+}
