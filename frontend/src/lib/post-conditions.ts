@@ -146,3 +146,11 @@ export function combinePostConditions(
 ): AnyPostCondition[] {
   return groups.flatMap(g => g.conditions);
 }
+
+export default {
+  PostConditionBuilder,
+  PostConditionManager,
+  createPostCondition,
+  serializePostConditions,
+  validatePostCondition,
+};
