@@ -92,3 +92,9 @@ export function serializePostConditions(conditions: AnyPostCondition[]): string 
 export function deserializePostConditions(data: string): AnyPostCondition[] {
   return JSON.parse(data);
 }
+
+export function validatePostCondition(condition: AnyPostCondition): boolean {
+  if (!condition.type) return false;
+  if (!condition.comparator) return false;
+  return true;
+}
