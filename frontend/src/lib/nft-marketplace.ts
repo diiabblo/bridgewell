@@ -123,3 +123,9 @@ export const MARKETPLACE_ERRORS = {
 export function formatPrice(ustx: bigint): string {
   return \`\${ustx} STX\`;
 }
+
+export interface CollectionStats {
+  totalListings: number;
+  totalVolume: bigint;
+  floorPrice: bigint;
+}
