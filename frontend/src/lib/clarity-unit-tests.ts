@@ -24,3 +24,10 @@ export class TestRunner {
     }
   }
 }
+
+export interface AssertionResult {
+  success: boolean;
+  expected?: unknown;
+  actual?: unknown;
+  message?: string;
+}
