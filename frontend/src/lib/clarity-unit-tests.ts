@@ -36,3 +36,7 @@ export function assertEquals(actual: unknown, expected: unknown, message?: strin
   const success = actual === expected;
   return { success, expected, actual, message };
 }
+
+export function assertTrue(value: boolean, message?: string): AssertionResult {
+  return { success: value, message };
+}
