@@ -37,3 +37,18 @@ export interface NFTPostCondition extends PostConditionBase {
   assetId: string;
   sender?: string;
 }
+
+export type AnyPostCondition = STXPostCondition | FTPostCondition | NFTPostCondition;
+
+export class PostConditionBuilder {
+  private conditions: AnyPostCondition[] = [];
+  
+  addSTX(
+    amount: bigint,
+    comparator: PostConditionComparator,
+    sender?: string
+  ): this {
+    this.conditions.push({ type: 'stx', amount, comparator, mode: 'allow', sender });
+    return this;
+  }
+}
