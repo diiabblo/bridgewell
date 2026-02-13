@@ -52,3 +52,13 @@ export class PostConditionBuilder {
     return this;
   }
 }
+
+  addFT(
+    assetId: string,
+    amount: bigint,
+    comparator: PostConditionComparator,
+    sender?: string
+  ): this {
+    this.conditions.push({ type: 'ft', assetId, amount, comparator, mode: 'allow', sender });
+    return this;
+  }
