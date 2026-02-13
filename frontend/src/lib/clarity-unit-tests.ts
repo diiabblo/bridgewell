@@ -83,3 +83,7 @@ export function createMockContract(functions: string[]): Record<string, unknown>
   });
   return mock;
 }
+
+export interface TestReporter {
+  report(results: ContractTest[]): void;
+}
