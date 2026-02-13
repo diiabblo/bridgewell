@@ -113,3 +113,9 @@ export class MarketplaceEvents {
     this.listeners.forEach(fn => fn(event));
   }
 }
+
+export const MARKETPLACE_ERRORS = {
+  LISTING_NOT_FOUND: 'Listing not found',
+  PRICE_TOO_LOW: 'Price below minimum',
+  NOT_OWNER: 'Not the NFT owner',
+} as const;
