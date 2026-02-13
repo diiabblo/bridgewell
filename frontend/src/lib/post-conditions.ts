@@ -98,3 +98,7 @@ export function validatePostCondition(condition: AnyPostCondition): boolean {
   if (!condition.comparator) return false;
   return true;
 }
+
+export function getPostConditionSummary(condition: AnyPostCondition): string {
+  return \`\${condition.type}: \${condition.comparator} \${condition.amount}\`;
+}
