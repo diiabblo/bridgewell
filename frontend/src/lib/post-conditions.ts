@@ -84,3 +84,7 @@ export function createPostCondition(
 ): AnyPostCondition {
   return { type, comparator, amount, mode: 'allow' };
 }
+
+export function serializePostConditions(conditions: AnyPostCondition[]): string {
+  return JSON.stringify(conditions);
+}
