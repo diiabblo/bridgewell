@@ -9,3 +9,12 @@ export interface NFTListing {
   price: bigint;
   listed: boolean;
 }
+
+export interface NFTOffer {
+  id: string;
+  nftContract: string;
+  tokenId: bigint;
+  buyer: string;
+  price: bigint;
+  accepted: boolean;
+}
