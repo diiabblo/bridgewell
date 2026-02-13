@@ -48,3 +48,7 @@ export function assertFalse(value: boolean, message?: string): AssertionResult {
 export function assertNotEquals(actual: unknown, expected: unknown): AssertionResult {
   return { success: actual !== expected, expected, actual };
 }
+
+export function assertGreaterThan(a: number, b: number): AssertionResult {
+  return > b, expected { success: a: \`> \${b}\`, actual: a };
+}
