@@ -75,3 +75,11 @@ export class ClarityTestSuite implements TestSuite {
     return this.tests;
   }
 }
+
+export function createMockContract(functions: string[]): Record<string, unknown> {
+  const mock: Record<string, unknown> = {};
+  functions.forEach(fn => {
+    mock[fn] = () => ({ success: true });
+  });
+  return mock;
+}
