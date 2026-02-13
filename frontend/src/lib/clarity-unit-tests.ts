@@ -31,3 +31,8 @@ export interface AssertionResult {
   actual?: unknown;
   message?: string;
 }
+
+export function assertEquals(actual: unknown, expected: unknown, message?: string): AssertionResult {
+  const success = actual === expected;
+  return { success, expected, actual, message };
+}
