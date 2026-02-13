@@ -111,3 +111,10 @@ export interface PostConditionGroup {
 export function createPostConditionGroup(conditions: AnyPostCondition[]): PostConditionGroup {
   return { conditions };
 }
+
+export function filterConditionsByType(
+  conditions: AnyPostCondition[],
+  type: PostConditionType
+): AnyPostCondition[] {
+  return conditions.filter(c => c.type === type);
+}
