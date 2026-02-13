@@ -106,3 +106,9 @@ export function beforeEach(fn: () => void): void {
 export function afterEach(fn: () => void): void {
   fn();
 }
+
+export interface TestContext {
+  contract: unknown;
+  setUp(): Promise<void>;
+  tearDown(): Promise<void>;
+}
