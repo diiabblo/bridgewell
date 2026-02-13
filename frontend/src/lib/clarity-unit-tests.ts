@@ -125,3 +125,9 @@ export async function runContractTest(
     return { name: testFn.name, passed: false, error: String(e) };
   }
 }
+
+export const TEST_ERRORS = {
+  ASSERTION_FAILED: 'Assertion failed',
+  CONTRACT_NOT_FOUND: 'Contract not found',
+  TEST_TIMEOUT: 'Test timed out',
+} as const;
