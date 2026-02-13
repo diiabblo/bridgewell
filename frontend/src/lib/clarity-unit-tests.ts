@@ -52,3 +52,7 @@ export function assertNotEquals(actual: unknown, expected: unknown): AssertionRe
 export function assertGreaterThan(a: number, b: number): AssertionResult {
   return > b, expected { success: a: \`> \${b}\`, actual: a };
 }
+
+export function assertLessThan(a: number, b: number): AssertionResult {
+  return { success: a < b, expected: \`< \${b}\`, actual: a };
+}
