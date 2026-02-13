@@ -93,3 +93,11 @@ export function filterListings(
     return true;
   });
 }
+
+export interface SaleEvent {
+  listingId: string;
+  buyer: string;
+  seller: string;
+  price: bigint;
+  timestamp: Date;
+}
