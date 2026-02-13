@@ -88,3 +88,7 @@ export function createPostCondition(
 export function serializePostConditions(conditions: AnyPostCondition[]): string {
   return JSON.stringify(conditions);
 }
+
+export function deserializePostConditions(data: string): AnyPostCondition[] {
+  return JSON.parse(data);
+}
