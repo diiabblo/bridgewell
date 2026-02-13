@@ -87,3 +87,14 @@ export function createMockContract(functions: string[]): Record<string, unknown>
 export interface TestReporter {
   report(results: ContractTest[]): void;
 }
+
+export class ConsoleTestReporter implements TestReporter {
+  report(results: ContractTest[]): void {
+    results.forEach(test => {
+      console.log(\`Contract: \${test.contractName}\`);
+      test.testCases.forEach(tc => {
+        console.log(\`  \${tc.passed ? '✓' : '✗'} \${tc.name}\`);
+      });
+    });
+  }
+}
