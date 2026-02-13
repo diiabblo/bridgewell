@@ -101,3 +101,15 @@ export interface SaleEvent {
   price: bigint;
   timestamp: Date;
 }
+
+export class MarketplaceEvents {
+  private listeners: Array<(event: SaleEvent) => void> = [];
+  
+  onSale(fn: (event: SaleEvent) => void): void {
+    this.listeners.push(fn);
+  }
+  
+  emit(event: SaleEvent): void {
+    this.listeners.forEach(fn => fn(event));
+  }
+}
