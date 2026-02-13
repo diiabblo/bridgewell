@@ -51,3 +51,7 @@ export interface OfferRequest {
 export function calculateRoyalty(price: bigint, percent: number): bigint {
   return (price * BigInt(percent)) / 100n;
 }
+
+export function calculateSellerProceeds(price: bigint, percent: number): bigint {
+  return price - calculateRoyalty(price, percent);
+}
