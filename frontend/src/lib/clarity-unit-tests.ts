@@ -40,3 +40,7 @@ export function assertEquals(actual: unknown, expected: unknown, message?: strin
 export function assertTrue(value: boolean, message?: string): AssertionResult {
   return { success: value, message };
 }
+
+export function assertFalse(value: boolean, message?: string): AssertionResult {
+  return { success: !value, message };
+}
