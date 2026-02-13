@@ -131,3 +131,13 @@ export const TEST_ERRORS = {
   CONTRACT_NOT_FOUND: 'Contract not found',
   TEST_TIMEOUT: 'Test timed out',
 } as const;
+
+export default {
+  TestRunner,
+  ClarityTestSuite,
+  ConsoleTestReporter,
+  assertEquals,
+  assertTrue,
+  assertFalse,
+  runContractTest,
+};
