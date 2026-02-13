@@ -124,3 +124,19 @@ export const POST_CONDITION_ERRORS = {
   INVALID_COMPARATOR: 'Invalid comparator',
   MISSING_AMOUNT: 'Amount is required',
 } as const;
+
+export class PostConditionManager {
+  private conditions: AnyPostCondition[] = [];
+  
+  add(condition: AnyPostCondition): void {
+    this.conditions.push(condition);
+  }
+  
+  getAll(): AnyPostCondition[] {
+    return this.conditions;
+  }
+  
+  clear(): void {
+    this.conditions = [];
+  }
+}
