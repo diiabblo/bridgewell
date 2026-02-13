@@ -102,3 +102,12 @@ export function validatePostCondition(condition: AnyPostCondition): boolean {
 export function getPostConditionSummary(condition: AnyPostCondition): string {
   return \`\${condition.type}: \${condition.comparator} \${condition.amount}\`;
 }
+
+export interface PostConditionGroup {
+  conditions: AnyPostCondition[];
+  message?: string;
+}
+
+export function createPostConditionGroup(conditions: AnyPostCondition[]): PostConditionGroup {
+  return { conditions };
+}
