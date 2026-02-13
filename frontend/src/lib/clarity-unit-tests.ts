@@ -44,3 +44,7 @@ export function assertTrue(value: boolean, message?: string): AssertionResult {
 export function assertFalse(value: boolean, message?: string): AssertionResult {
   return { success: !value, message };
 }
+
+export function assertNotEquals(actual: unknown, expected: unknown): AssertionResult {
+  return { success: actual !== expected, expected, actual };
+}
