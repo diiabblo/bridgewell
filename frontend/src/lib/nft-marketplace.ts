@@ -67,3 +67,9 @@ export class ListingManager {
     return this.listings.get(id);
   }
 }
+
+export function validateListing(listing: ListingRequest): boolean {
+  if (!listing.nftContract) return false;
+  if (listing.price <= 0n) return false;
+  return true;
+}
