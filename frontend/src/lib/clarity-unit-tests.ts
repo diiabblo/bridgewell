@@ -6,3 +6,8 @@ export interface TestCase {
   passed: boolean;
   error?: string;
 }
+
+export interface ContractTest {
+  contractName: string;
+  testCases: TestCase[];
+}
