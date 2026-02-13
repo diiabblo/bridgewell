@@ -73,3 +73,10 @@ export function validateListing(listing: ListingRequest): boolean {
   if (listing.price <= 0n) return false;
   return true;
 }
+
+export interface MarketplaceFilters {
+  contract?: string;
+  minPrice?: bigint;
+  maxPrice?: bigint;
+  seller?: string;
+}
