@@ -41,3 +41,9 @@ export interface ListingRequest {
   tokenId: bigint;
   price: bigint;
 }
+
+export interface OfferRequest {
+  nftContract: string;
+  tokenId: bigint;
+  price: bigint;
+}
