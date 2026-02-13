@@ -35,3 +35,9 @@ export class NFTMarketplace {
     return this.config.royaltyPercent;
   }
 }
+
+export interface ListingRequest {
+  nftContract: string;
+  tokenId: bigint;
+  price: bigint;
+}
