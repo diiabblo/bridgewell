@@ -140,3 +140,9 @@ export class PostConditionManager {
     this.conditions = [];
   }
 }
+
+export function combinePostConditions(
+  groups: PostConditionGroup[]
+): AnyPostCondition[] {
+  return groups.flatMap(g => g.conditions);
+}
