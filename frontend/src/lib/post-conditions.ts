@@ -118,3 +118,9 @@ export function filterConditionsByType(
 ): AnyPostCondition[] {
   return conditions.filter(c => c.type === type);
 }
+
+export const POST_CONDITION_ERRORS = {
+  INVALID_TYPE: 'Invalid post-condition type',
+  INVALID_COMPARATOR: 'Invalid comparator',
+  MISSING_AMOUNT: 'Amount is required',
+} as const;
