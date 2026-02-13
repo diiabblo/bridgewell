@@ -119,3 +119,7 @@ export const MARKETPLACE_ERRORS = {
   PRICE_TOO_LOW: 'Price below minimum',
   NOT_OWNER: 'Not the NFT owner',
 } as const;
+
+export function formatPrice(ustx: bigint): string {
+  return \`\${ustx} STX\`;
+}
