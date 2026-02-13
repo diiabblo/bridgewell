@@ -62,3 +62,16 @@ export interface TestSuite {
   tests: ContractTest[];
   run(): Promise<ContractTest[]>;
 }
+
+export class ClarityTestSuite implements TestSuite {
+  name: string;
+  tests: ContractTest[] = [];
+  
+  constructor(name: string) {
+    this.name = name;
+  }
+  
+  async run(): Promise<ContractTest[]> {
+    return this.tests;
+  }
+}
