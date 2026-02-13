@@ -23,3 +23,15 @@ export interface MarketplaceConfig {
   marketplaceContract: string;
   royaltyPercent: number;
 }
+
+export class NFTMarketplace {
+  private config: MarketplaceConfig;
+  
+  constructor(config: MarketplaceConfig) {
+    this.config = config;
+  }
+  
+  getRoyalty(): number {
+    return this.config.royaltyPercent;
+  }
+}
