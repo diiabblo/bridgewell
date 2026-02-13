@@ -18,3 +18,8 @@ export interface NFTOffer {
   price: bigint;
   accepted: boolean;
 }
+
+export interface MarketplaceConfig {
+  marketplaceContract: string;
+  royaltyPercent: number;
+}
