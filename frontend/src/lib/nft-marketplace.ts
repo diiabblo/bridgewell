@@ -55,3 +55,15 @@ export function calculateRoyalty(price: bigint, percent: number): bigint {
 export function calculateSellerProceeds(price: bigint, percent: number): bigint {
   return price - calculateRoyalty(price, percent);
 }
+
+export class ListingManager {
+  private listings: Map<string, NFTListing> = new Map();
+  
+  add(listing: NFTListing): void {
+    this.listings.set(listing.id, listing);
+  }
+  
+  get(id: string): NFTListing | undefined {
+    return this.listings.get(id);
+  }
+}
