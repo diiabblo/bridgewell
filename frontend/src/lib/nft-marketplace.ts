@@ -138,3 +138,9 @@ export function calculateCollectionStats(listings: NFTListing[]): CollectionStat
     floorPrice: prices.length ? Math.min(...prices.map(Number)) : 0n,
   };
 }
+
+export interface BidRequest {
+  listingId: string;
+  bidder: string;
+  amount: bigint;
+}
