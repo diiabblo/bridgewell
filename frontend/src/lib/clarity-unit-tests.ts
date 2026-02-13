@@ -98,3 +98,11 @@ export class ConsoleTestReporter implements TestReporter {
     });
   }
 }
+
+export function beforeEach(fn: () => void): void {
+  fn();
+}
+
+export function afterEach(fn: () => void): void {
+  fn();
+}
