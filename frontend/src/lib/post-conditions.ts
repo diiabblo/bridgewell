@@ -17,3 +17,9 @@ export interface PostConditionBase {
   comparator: PostConditionComparator;
   mode: PostConditionMode;
 }
+
+export interface STXPostCondition extends PostConditionBase {
+  type: 'stx';
+  amount: bigint;
+  sender?: string;
+}
