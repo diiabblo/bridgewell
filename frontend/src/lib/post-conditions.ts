@@ -76,3 +76,11 @@ export class PostConditionBuilder {
     return this.conditions;
   }
 }
+
+export function createPostCondition(
+  type: PostConditionType,
+  comparator: PostConditionComparator,
+  amount: bigint
+): AnyPostCondition {
+  return { type, comparator, amount, mode: 'allow' };
+}
