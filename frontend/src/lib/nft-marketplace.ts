@@ -80,3 +80,16 @@ export interface MarketplaceFilters {
   maxPrice?: bigint;
   seller?: string;
 }
+
+export function filterListings(
+  listings: NFTListing[],
+  filters: MarketplaceFilters
+): NFTListing[] {
+  return listings.filter(l => {
+    if (filters.contract && l.nftContract !== filters.contract) return false;
+    if (filters.minPrice && l.price < filters.minPrice) return false;
+    if (filters.maxPrice && l.price > filters.maxPrice) return false;
+    if (filters.seller && l.seller !== filters.seller) return false;
+    return true;
+  });
+}
