@@ -30,3 +30,10 @@ export interface FTPostCondition extends PostConditionBase {
   assetId: string;
   sender?: string;
 }
+
+export interface NFTPostCondition extends PostConditionBase {
+  type: 'nft';
+  tokenId: bigint;
+  assetId: string;
+  sender?: string;
+}
