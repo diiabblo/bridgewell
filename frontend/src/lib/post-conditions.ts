@@ -23,3 +23,10 @@ export interface STXPostCondition extends PostConditionBase {
   amount: bigint;
   sender?: string;
 }
+
+export interface FTPostCondition extends PostConditionBase {
+  type: 'ft';
+  amount: bigint;
+  assetId: string;
+  sender?: string;
+}
