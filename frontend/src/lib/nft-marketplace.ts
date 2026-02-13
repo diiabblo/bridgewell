@@ -129,3 +129,12 @@ export interface CollectionStats {
   totalVolume: bigint;
   floorPrice: bigint;
 }
+
+export function calculateCollectionStats(listings: NFTListing[]): CollectionStats {
+  const prices = listings.map(l => l.price);
+  return {
+    totalListings: listings.length,
+    totalVolume: listings.reduce((sum, l) => sum + l.price, 0n),
+    floorPrice: prices.length ? Math.min(...prices.map(Number)) : 0n,
+  };
+}
