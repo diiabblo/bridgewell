@@ -112,3 +112,16 @@ export interface TestContext {
   setUp(): Promise<void>;
   tearDown(): Promise<void>;
 }
+
+export async function runContractTest(
+  contract: unknown,
+  testFn: (ctx: TestContext) => Promise<void>
+): Promise<TestCase> {
+  const ctx = { contract, setUp: async () => {}, tearDown: async () => {} };
+  try {
+    await testFn(ctx);
+    return { name: testFn.name, passed: true };
+  } catch (e) {
+    return { name: testFn.name, passed: false, error: String(e) };
+  }
+}
