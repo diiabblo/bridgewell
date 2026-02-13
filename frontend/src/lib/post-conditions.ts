@@ -62,3 +62,12 @@ export class PostConditionBuilder {
     this.conditions.push({ type: 'ft', assetId, amount, comparator, mode: 'allow', sender });
     return this;
   }
+
+  addNFT(
+    assetId: string,
+    tokenId: bigint,
+    sender?: string
+  ): this {
+    this.conditions.push({ type: 'nft', assetId, tokenId, comparator: 'eq', mode: 'allow', sender });
+    return this;
+  }
